@@ -20,10 +20,14 @@ Player1.prototype.diceRoll = function() {
     }
   }
   Player1.prototype.holdTransfer = function() {
-    this.scoreTotal = this.turnScore;
-  
-    return this.scoreTotal;
+   var holdNumber = this.turnScore;
+   return this.scoreTotal + holdNumber;
+    // return this.scoreTotal;
   }
+Player1.prototype.clearTurnScore = function() {
+  this.turnScore *=0;
+  return this.turnScore;
+}
   
 
 
@@ -38,6 +42,10 @@ $(document).ready(function() {
   $(".hold").click(function()  {
     // event.preventDefault();
     var result2 = turn.holdTransfer();
+    var result3 = turn.clearTurnScore();
+    // clearTurnScore();
     $("#p1score-total").text(result2);
-  })
+    $("#p1turn-total").text(result3);
+   
+  });
 });
