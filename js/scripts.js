@@ -28,11 +28,12 @@ Player.prototype.diceRoll = function() {
     }
   }
   Player.prototype.holdTransfer = function() {
-   var holdNumber = this.turnScore;
-   if (this.scoreTotal += holdNumber >= 100)  {
+  //  var holdNumber = this.turnScore;
+   if (this.scoreTotal + this.turnScore >= 100)  {
     alert("PLAYER 1 WINS!");
-  }
-   return this.scoreTotal += holdNumber;
+  } else {
+    return this.scoreTotal += this.turnScore;
+    }
   }
  
 Player.prototype.clearTurnScore = function() {
@@ -41,11 +42,11 @@ Player.prototype.clearTurnScore = function() {
 }
 // player2
 Player.prototype.holdTransfer2 = function() {
-  var holdNumber = this.turnScore;
-  if (this.scoreTotal2 += holdNumber >= 100)  {
+  // var holdNumber = this.turnScore;
+  if (this.scoreTotal2 + this.turnScore >= 100)  {
     alert("PLAYER 2 WINS!");
   }
-  return this.scoreTotal2 += holdNumber;
+  return this.scoreTotal2 += this.turnScore;
  }
 
 Player.prototype.clearTurnScore2 = function() {
