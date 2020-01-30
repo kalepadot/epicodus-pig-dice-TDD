@@ -1,4 +1,4 @@
-# _Beep-Boop Project_
+# _Pig Dice_
 
 #### __
 
