@@ -5,7 +5,12 @@ function Player() {
   this.scoreTotal = 0;
   this.scoreTotal2 = 0;
 }
+  Player.prototype.coinFlip = function() {
 
+  var coinValue = (Math.floor(Math.random() * 2) == 0) ? 'Heads' : 'Tails';
+  $("#coin-result").text(coinValue);
+  
+}
 
 
 generateNumber = function() {
@@ -89,4 +94,8 @@ $(document).ready(function() {
     $(".rollBtn").toggle();
     $(".rollBtn2").toggle();
   });
+    $("#coinBtn").click(function(){
+    turn.coinFlip();
+   
+  })
 });
