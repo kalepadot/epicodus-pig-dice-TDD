@@ -2,15 +2,18 @@
 
 #### __
 
-#### By _**Drake Wilcox and Jeremy Padot**_
+#### By _**Drake Wilcox and ....**_
+<!--  
+                                        
+                                 ,  ,                , _                  
+  /|  _  ,_   _                 /|_/   _,  |\  _    /|/ \ _,   _|   _ _|_ 
+ | | |/ /  | |/ /|/|/|  |  |     |\   / |  |/ |/     |__// |  / |  / \_|  
+  \|/|_/   |/|_/ | | |_/ \/|/    | \_/\/|_/|_/|_/    |   \/|_/\/|_/\_/ |_/
+  (|                      (|                                              
 
-## Description
+-->
 
-
-## Setup/Installation Requirements
-
-
-* _Clone this repository to your desktop_
+ _Clone this repository to your desktop_
 * _For a mac, run the following commands from your home terminal to view the page_
 * _cd-desktop_
 * _cd pig-dice_

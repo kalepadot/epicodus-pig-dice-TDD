@@ -11,7 +11,13 @@
     <title>Pig Dice</title>
   </head>
   <body>
+   
     <div class="container">
+      <img  class="banner" src="img/casinobanner.gif" alt="">
+      <div class="scores">
+        <p id="p1score-total">0</p>
+        <p id="p2score-total">0</p>
+      </div>
       <div class="coin-toss">
         <h3>Flip a coin to see who goes first</h3>
         <button id="coinBtn" type="submit">Heads or Tails?</button>
@@ -19,7 +25,7 @@
       </div>
       <br>
       <div class="row">
-        <div class="col-md-6 text-center well p1">
+        <div class="col-md-6">
           <button class="rollBtn" type="submit">Roll!</button>
           <div id="output">
             <div>
@@ -29,13 +35,14 @@
             </div>
             <button class ="hold" type="submit">Hold!</button>
             <div>
-              <h3>Player 1 Score Total:</h3>
-           <p id="p1score-total"></p>
+              <!-- <h3>Player 1 Score Total:</h3> -->
+           <!-- <p id="p1score-total"></p> -->
             </div>
           </div>
           
         </div>
-        <div class="col-md-6 text-center well p2">
+     
+        <div class="col-md-6">
           <button class="rollBtn2" type="submit">Roll!</button>
           <div id="output2">
             <div>
@@ -45,7 +52,7 @@
             </div>
             <button class ="hold2" type="submit">Hold!</button>
             <div>
-              <h3>Player 2 Score Total:</h3>
+              <!-- <h3>Player 2 Score Total:</h3> -->
            <p id="p2score-total"></p>
             </div>
           </div>
