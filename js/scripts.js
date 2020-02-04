@@ -1,6 +1,6 @@
 // Business Logic For Dice Roll
 
-function Player() {
+export function Player() {
   this.turnScore = 0;
   this.scoreTotal = 0;
   this.scoreTotal2 = 0;
